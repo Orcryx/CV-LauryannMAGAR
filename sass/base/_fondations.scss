@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Nunito&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-width: 300px;
+    max-width: 1905px;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+ul
+{
+    list-style-type: none;
+}
+p, h2, h3
+{
+    font-family: "Nunito","Roboto", Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+h1
+{
+    font-family: "Gemunu Libre","Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
