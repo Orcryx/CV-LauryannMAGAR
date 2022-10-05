@@ -1,0 +1,34 @@
+Icones
+
+Voiture : <i class="fa-solid fa-car"></i>
+Discord : <i class="fa-brands fa-discord"></i>
+Github : <i class="fa-brands fa-github"></i>
+Facebook : <i class="fa-brands fa-facebook"></i>
+Twitter : <i class="fa-brands fa-twitter"></i>
+Sass : <i class="fa-brands fa-sass"></i>
+Check : <i class="fa-solid fa-check"></i>
+Téléchargement : <i class="fa-solid fa-download"></i>
+Home : <i class="fa-solid fa-house"></i>
+User : 
+<i class="fa-solid fa-user"></i>
+<i class="fa-solid fa-circle-user"></i>
+
+Etoile : <i class="fa-solid fa-star"></i>
+Localisation : <i class="fa-solid fa-location-dot"></i>
+Slider : <i class="fa-solid fa-sliders"></i>
+Diamond : <i class="fa-solid fa-sliders"></i>
+Caret : <i class="fa-solid fa-caret-down"></i>
+Award : 
+<i class="fa-solid fa-award"></i> 
+<i class="fa-solid fa-user-graduate"></i>
+
+Route : <i class="fa-solid fa-route"></i>
+Dice : <i class="fa-solid fa-dice"></i>
+Poisson : <i class="fa-solid fa-fish-fins"></i>
+node.js : <i class="fa-brands fa-node-js"></i>
+javascript : <i class="fa-brands fa-js"></i>
+CSS : <i class="fa-brands fa-css3-alt"></i>
+Html : <i class="fa-brands fa-html5"></i>
+gitkraken : <i class="fa-brands fa-gitkraken"></i>
+fontawesome : <i class="fa-brands fa-font-awesome"></i>
+@ : <i class="fa-solid fa-at"></i>
