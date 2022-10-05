@@ -78,8 +78,10 @@ header {
 **************************************************************/
 main {
   width: 100%;
+  color: #fff;
 }
 
+/* Section hero */
 #hero {
   display: flex;
   flex-direction: column-reverse;
@@ -87,7 +89,6 @@ main {
   width: 100%;
   padding: 10px;
   background-color: black;
-  color: #fff;
 }
 #hero .avatar {
   width: 50%;
@@ -110,4 +111,46 @@ main {
 #hero .presentation p {
   font-style: oblique;
   margin-top: 2%;
+}
+
+/* Section competences */
+#competences {
+  width: 100%;
+  padding: 10px;
+  background-color: #301550;
+}
+
+/* Section formations */
+#formations {
+  width: 100%;
+  padding: 10px;
+  background-color: #822568;
+}
+
+/* Section parcours */
+#parcours {
+  width: 100%;
+  padding: 10px;
+  background-color: #ec9f11;
+}
+
+/* Section realisations */
+#realisations {
+  width: 100%;
+  padding: 10px;
+  background-color: #301550;
+}
+
+/* Section realisation */
+#realisations {
+  width: 100%;
+  padding: 10px;
+  background-color: #301550;
+}
+
+/* Section passions */
+#passions {
+  width: 100%;
+  padding: 10px;
+  background-color: #822568;
 }/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,9 @@
 main
 {
     width: 100%;
+    color: #fff;
 }
+/* Section hero */
 #hero
 {
     display: flex;
@@ -18,8 +20,7 @@ main
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: black;
-    color: #fff;
+    background-color: black;   
     //border: 1px solid saddlebrown;
     & .avatar
     {
@@ -48,4 +49,46 @@ main
             margin-top: 2%;
         }
     }
+} 
+/* Section competences */
+#competences
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $primaire ; 
+}
+/* Section formations */
+#formations
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $secondaire ; 
+}
+/* Section parcours */
+#parcours
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $tertiaire ; 
+}
+/* Section realisations */
+#realisations
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $primaire ; 
+}
+/* Section realisation */
+#realisations
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $primaire ; 
+}
+/* Section passions */
+#passions
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $secondaire ; 
 }
