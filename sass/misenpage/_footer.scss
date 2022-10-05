@@ -1,0 +1,21 @@
+/**************************************************************
+                         FOOTER
+**************************************************************/
+/* Section contact */
+footer
+{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow:  1px 1px 2px 5px rgba(60, 60, 60, 0.8);
+}
+#contact
+{
+    width: 100%;
+    padding: 10px;
+    background-color: $tertiaire ; 
+}
