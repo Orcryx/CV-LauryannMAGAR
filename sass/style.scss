@@ -109,22 +109,25 @@ main
    {
     display: flex;
     flex-direction: column;
-    padding: 1px;
+    padding: 10px;
     overflow: hidden;
    } 
   
    & .carte
    {
        display: flex;
-       gap: 10px;
-       margin-left: 15px;
-       width: 90%;
-       max-width: 300px ;
+       width: 100%;
+       min-width: 260px;
+       //max-width: 300px ;
+       //border: 1px deeppink solid;
        & .-image
        {
         align-self: center;
         font-size: 40px;
-       //border: 1px deeppink solid;
+        & .fa-mobile-screen-button
+        {
+            padding-left: 8px;
+        }
        }
        & .-bloc
        {

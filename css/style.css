@@ -194,19 +194,20 @@ main {
 #competences .capacites {
   display: flex;
   flex-direction: column;
-  padding: 1px;
+  padding: 10px;
   overflow: hidden;
 }
 #competences .carte {
   display: flex;
-  gap: 10px;
-  margin-left: 15px;
-  width: 90%;
-  max-width: 300px;
+  width: 100%;
+  min-width: 260px;
 }
 #competences .carte .-image {
   align-self: center;
   font-size: 40px;
+}
+#competences .carte .-image .fa-mobile-screen-button {
+  padding-left: 8px;
 }
 #competences .carte .-bloc h3 {
   font-size: 0.9em;
