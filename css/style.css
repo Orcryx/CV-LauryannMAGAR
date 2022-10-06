@@ -46,7 +46,7 @@ header {
 }
 
 .fa-bars {
-  color: #ec9f11;
+  color: #822568;
   font-size: 30px;
   margin: 2px 0 2px 20px;
 }
@@ -69,7 +69,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   overflow: hidden;
-  transition: height 0.4s ease-in-out;
+  transition: height 0.1s ease-in-out;
 }
 .nav-fixe .deroulant li {
   margin: 5px;
