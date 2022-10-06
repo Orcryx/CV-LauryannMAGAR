@@ -105,8 +105,35 @@ main
 /* Section competences */
 #competences
 {
-    
+   & .capacites
+   {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    overflow: hidden;
+   } 
   
+   & .carte
+   {
+       display: flex;
+       gap: 10px;
+       margin-left: 15px;
+       width: 90%;
+       max-width: 300px ;
+       & .-image
+       {
+        align-self: center;
+        font-size: 40px;
+       //border: 1px deeppink solid;
+       }
+       & .-bloc
+       {
+        & h3
+        {
+            font-size: 0.9em;
+        }
+       }
+   }
     background-color: $primaire ; 
 }
 /* Section formations */

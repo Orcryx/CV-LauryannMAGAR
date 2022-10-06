@@ -191,6 +191,26 @@ main {
 #competences {
   background-color: #301550;
 }
+#competences .capacites {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  overflow: hidden;
+}
+#competences .carte {
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+  width: 90%;
+  max-width: 300px;
+}
+#competences .carte .-image {
+  align-self: center;
+  font-size: 40px;
+}
+#competences .carte .-bloc h3 {
+  font-size: 0.9em;
+}
 
 /* Section formations */
 #formations {
