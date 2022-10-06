@@ -20,8 +20,8 @@ main
     align-items: center;
     width: 100%;
     padding: 10px;
+    padding-top: $distanceTop;
     background-color: black;   
-    //border: 1px solid saddlebrown;
     & .avatar
     {
         width: 50%;
@@ -31,7 +31,7 @@ main
         object-fit: cover;
         border-radius: 50%;
         padding: 5px;
-        margin: 2%;
+        margin: 20px 5px 5px 5px;
         background-color: #fff;
         
     }
@@ -49,46 +49,91 @@ main
             margin-top: 2%;
         }
     }
+}
+
+#aPropos, #competences, #formations, #parcours, #realisations, .commentaire
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.commentaire, .softskills, .techniques, .outils, .capacites, .environnement
+{
+    color: $primaire;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    & h2
+    {
+        font-size: 1.5em;
+    }
+}
+/* Section aPropos */
+#aPropos
+{
+    & .commentaire
+    {               
+        text-align: justify;                    
+        & h3
+        {
+            color: $secondaire;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    & .softskills
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+        padding: 10px;          
+        & .atouts
+        {
+            display: block;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: $tertiaire;            
+        }
+    }
+
 } 
 /* Section competences */
 #competences
 {
-    width: 100%;
-    padding: 10px;
+    
+  
     background-color: $primaire ; 
 }
 /* Section formations */
 #formations
 {
-    width: 100%;
-    padding: 10px;
+
+
     background-color: $secondaire ; 
 }
 /* Section parcours */
 #parcours
 {
-    width: 100%;
-    padding: 10px;
+
+
     background-color: $tertiaire ; 
 }
 /* Section realisations */
 #realisations
 {
-    width: 100%;
-    padding: 10px;
-    background-color: $primaire ; 
-}
-/* Section realisation */
-#realisations
-{
-    width: 100%;
-    padding: 10px;
+
+
     background-color: $primaire ; 
 }
 /* Section passions */
 #passions
 {
-    width: 100%;
-    padding: 10px;
+
+
     background-color: $secondaire ; 
 }

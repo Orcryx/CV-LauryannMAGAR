@@ -8,6 +8,8 @@
 body {
   min-width: 300px;
   max-width: 1905px;
+  background: url("../images/pattern.png");
+  background-repeat: repeat;
 }
 
 ul {
@@ -17,12 +19,13 @@ ul {
 p, h2, h3 {
   font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
   font-size: 0.8em;
+  margin: 10px;
 }
 
 h1 {
   font-family: "Gemunu Libre", "Roboto", Arial, Helvetica, sans-serif;
   font-size: 1em;
-  margin: 0;
+  margin: 5px 0 10px 0;
 }
 
 li, a {
@@ -35,23 +38,21 @@ li, a {
                          HEADER
 **************************************************************/
 header {
+  position: fixed;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   width: 100%;
-  background-color: rgba(60, 60, 60, 0.8);
-  box-shadow: 1px 1px 2px 5px rgba(60, 60, 60, 0.8);
+  background-color: rgba(60, 60, 60, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(60, 60, 60, 0.8);
 }
 
 .fa-bars {
   color: #ec9f11;
   font-size: 30px;
-  margin-left: 80%;
+  margin: 2px 0 2px 20px;
 }
 
 .nav-fixe {
   width: 100%;
-  height: 33%;
   cursor: pointer;
 }
 .nav-fixe #menu {
@@ -66,8 +67,12 @@ header {
   font-size: 20px;
   height: 0px;
   text-align: center;
+  text-transform: uppercase;
   overflow: hidden;
   transition: height 0.4s ease-in-out;
+}
+.nav-fixe .deroulant li {
+  margin: 5px;
 }
 .nav-fixe .deroulant li:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -78,7 +83,6 @@ header {
 **************************************************************/
 /* Section contact */
 footer {
-  position: fixed;
   bottom: 0px;
   width: 100%;
   color: #fff;
@@ -96,7 +100,8 @@ footer {
   border-left: none;
   border-right: none;
   border-bottom: none;
-  box-shadow: 1px 1px 2px 5px rgba(60, 60, 60, 0.8);
+  background: url("../images/ciel.png"), rgba(60, 60, 60, 0.5);
+  box-shadow: 1px 1px 2px 5px rgba(60, 60, 60, 0.3);
 }
 
 /**************************************************************
@@ -114,6 +119,7 @@ main {
   align-items: center;
   width: 100%;
   padding: 10px;
+  padding-top: 30px;
   background-color: black;
 }
 #hero .avatar {
@@ -124,7 +130,7 @@ main {
   object-fit: cover;
   border-radius: 50%;
   padding: 5px;
-  margin: 2%;
+  margin: 20px 5px 5px 5px;
   background-color: #fff;
 }
 #hero .presentation {
@@ -139,44 +145,69 @@ main {
   margin-top: 2%;
 }
 
+#aPropos, #competences, #formations, #parcours, #realisations, .commentaire {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.commentaire, .softskills, .techniques, .outils, .capacites, .environnement {
+  color: #301550;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.commentaire h2, .softskills h2, .techniques h2, .outils h2, .capacites h2, .environnement h2 {
+  font-size: 1.5em;
+}
+
+/* Section aPropos */
+#aPropos .commentaire {
+  text-align: justify;
+}
+#aPropos .commentaire h3 {
+  color: #822568;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#aPropos .softskills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  padding: 10px;
+}
+#aPropos .softskills .atouts {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #ec9f11;
+}
+
 /* Section competences */
 #competences {
-  width: 100%;
-  padding: 10px;
   background-color: #301550;
 }
 
 /* Section formations */
 #formations {
-  width: 100%;
-  padding: 10px;
   background-color: #822568;
 }
 
 /* Section parcours */
 #parcours {
-  width: 100%;
-  padding: 10px;
   background-color: #ec9f11;
 }
 
 /* Section realisations */
 #realisations {
-  width: 100%;
-  padding: 10px;
-  background-color: #301550;
-}
-
-/* Section realisation */
-#realisations {
-  width: 100%;
-  padding: 10px;
   background-color: #301550;
 }
 
 /* Section passions */
 #passions {
-  width: 100%;
-  padding: 10px;
   background-color: #822568;
 }/*# sourceMappingURL=style.css.map */

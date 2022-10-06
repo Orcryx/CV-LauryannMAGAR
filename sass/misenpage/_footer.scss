@@ -4,11 +4,11 @@
 /* Section contact */
 footer
 {
-    position: fixed;
+    //position: fixed;
     bottom: 0px;
     width: 100%;
     color: #fff;
-
+   
 }
 #contact
 {
@@ -23,5 +23,6 @@ footer
     border-left: none;
     border-right: none;
     border-bottom: none;
-    box-shadow:  1px 1px 2px 5px rgba(60, 60, 60, 0.8);
+    background: url("../images/ciel.png"),  rgba(60, 60, 60, 0.5);
+    box-shadow:  1px 1px 2px 5px rgba(60, 60, 60, 0.3);
 }
