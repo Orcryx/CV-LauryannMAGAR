@@ -156,10 +156,12 @@ main {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
 .commentaire, .softskills, .techniques, .outils, .capacites, .environnement {
+  width: 90%;
   color: #301550;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -207,6 +209,7 @@ main {
   flex-direction: column;
   padding: 10px;
   overflow: hidden;
+  max-width: 500px;
 }
 #competences .carte {
   display: flex;
@@ -222,15 +225,16 @@ main {
 }
 #competences .techniques .-jauge {
   display: flex;
-  align-self: center;
   flex-wrap: wrap;
-  max-width: 500px;
 }
 #competences .techniques label {
   padding: 5px;
   margin: auto;
   font-size: 0.8em;
   font-weight: bold;
+}
+#competences .-icones {
+  display: flex;
 }
 
 /* Section formations */

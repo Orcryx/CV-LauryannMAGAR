@@ -57,11 +57,13 @@ main
     padding: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 .commentaire, .softskills, .techniques, .outils, .capacites, .environnement
 {
+    width: 90%;
     color: $primaire;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.9); 
@@ -116,6 +118,7 @@ main
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
+    max-width: 500px;
    } 
      /* Gérer les cartes de l'espace capacités */
    & .carte
@@ -141,9 +144,8 @@ main
     & .-jauge
     {
         display: flex;
-        align-self: center;
         flex-wrap: wrap;
-        max-width: 500px;
+       
     }
     & label
     {
@@ -154,8 +156,11 @@ main
     }
    }
    /* Gérer l'espace des outils techniques */
- 
+   & .-icones
+   {
+    display: flex;
 
+   }
 
    
 }
