@@ -105,14 +105,17 @@ main
 /* Section competences */
 #competences
 {
-   & .capacites
+   & .capacites, .techniques
    {
     display: flex;
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
+    & h2
+    {
+        font-size: 1.3em;
+    }
    } 
-  
    & .carte
    {
        display: flex;
@@ -137,6 +140,22 @@ main
         }
        }
    }
+   & .techniques
+   {
+    & .-jauge
+    {
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        max-width: 500px;
+    }
+    & label
+    {
+        padding: 5px;
+        margin: auto;
+    }
+   }
+
     background-color: $primaire ; 
 }
 /* Section formations */

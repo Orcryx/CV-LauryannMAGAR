@@ -191,11 +191,14 @@ main {
 #competences {
   background-color: #301550;
 }
-#competences .capacites {
+#competences .capacites, #competences .techniques {
   display: flex;
   flex-direction: column;
   padding: 10px;
   overflow: hidden;
+}
+#competences .capacites h2, #competences .techniques h2 {
+  font-size: 1.3em;
 }
 #competences .carte {
   display: flex;
@@ -211,6 +214,16 @@ main {
 }
 #competences .carte .-bloc h3 {
   font-size: 0.9em;
+}
+#competences .techniques .-jauge {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+#competences .techniques label {
+  padding: 5px;
+  margin: auto;
 }
 
 /* Section formations */
