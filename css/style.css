@@ -24,7 +24,14 @@ h2, h3 {
   margin: 10px;
 }
 
-p, label {
+h4 {
+  font-family: "Gemunu Libre", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  margin: 0 0 0 10px;
+  color: #822568;
+}
+
+p, label, i {
   font-size: 0.9em;
   margin: 10px;
 }
@@ -55,7 +62,7 @@ header {
 .fa-bars {
   color: #822568;
   font-size: 30px;
-  margin: 2px 0 2px 20px;
+  margin: 2px 0 2px 0;
 }
 
 .nav-fixe {
@@ -134,39 +141,51 @@ main {
   max-width: 200px;
   min-width: 150px;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
   padding: 5px;
   margin: 20px 5px 5px 5px;
   background-color: #fff;
+  background-image: url("../images/fond1.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
 }
 #hero .presentation {
   text-align: center;
 }
 #hero .presentation h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bold;
 }
 #hero .presentation p {
   font-style: oblique;
-  margin-top: 2%;
+  font-size: 0.8em;
 }
 
-#aPropos, #competences, #formations, #parcours, #realisations, .commentaire {
-  padding: 10px;
+#aPropos, #competences, #parcours, #realisations {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
   gap: 10px;
+  width: auto;
 }
 
-.commentaire, .softskills, .techniques, .outils, .capacites, .environnement {
-  width: 90%;
+.commentaire, .softskills, .techniques, .outils, .capacites {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 98%;
+  max-width: 480px;
+  padding: 10px;
   color: #301550;
   border-radius: 25px;
+  box-shadow: 1px 1px 2px 1px rgba(60, 60, 60, 0.8);
   background-color: rgba(255, 255, 255, 0.9);
 }
-.commentaire h2, .softskills h2, .techniques h2, .outils h2, .capacites h2, .environnement h2 {
+.commentaire h2, .softskills h2, .techniques h2, .outils h2, .capacites h2 {
   font-size: 1.5em;
 }
 
@@ -204,13 +223,6 @@ main {
   /* Gérer l'espace des compétences techniques */
   /* Gérer l'espace des outils techniques */
 }
-#competences .capacites, #competences .techniques, #competences .outils, #competences .environnements {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  overflow: hidden;
-  max-width: 500px;
-}
 #competences .carte {
   display: flex;
   width: 100%;
@@ -235,16 +247,66 @@ main {
 }
 #competences .-icones {
   display: flex;
+  justify-content: space-around;
+  font-size: 40px;
 }
-
-/* Section formations */
-#formations {
-  background-color: #822568;
+#competences .-icones .logo {
+  width: 40px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 /* Section parcours */
 #parcours {
-  background-color: #ec9f11;
+  background-color: #822568;
+}
+#parcours .evenements {
+  display: flex;
+  position: relative;
+  width: 90%;
+  color: #301550;
+  box-shadow: 1px 1px 2px 1px rgba(60, 60, 60, 0.4);
+  background-color: rgb(255, 255, 255);
+}
+#parcours .evenements img {
+  width: 0;
+  padding: 0;
+  height: auto;
+  object-fit: cover;
+}
+#parcours .evenements.borderGauche {
+  border-radius: 0 15px 15px 0;
+  border-left: 8px #ec9f11 solid;
+}
+#parcours .evenements.borderGauche::before {
+  content: " ";
+  position: absolute;
+  left: -20px;
+  top: 44%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-top: 2px solid #ec9f11;
+  border-bottom: 2px solid #ec9f11;
+  border-left: 2px solid #ec9f11;
+  background-color: #301550;
+}
+#parcours .evenements.borderDroite {
+  border-radius: 15px 0 0 15px;
+  border-right: 8px #ec9f11 solid;
+}
+#parcours .evenements.borderDroite::before {
+  content: " ";
+  position: absolute;
+  right: -20px;
+  top: 44%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-top: 2px solid #ec9f11;
+  border-bottom: 2px solid #ec9f11;
+  border-right: 2px solid #ec9f11;
+  background-color: #301550;
 }
 
 /* Section realisations */
