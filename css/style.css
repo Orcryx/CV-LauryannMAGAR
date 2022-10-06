@@ -1,8 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Nunito&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -16,9 +18,14 @@ ul {
   list-style-type: none;
 }
 
-p, h2, h3 {
-  font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
+h2, h3 {
+  font-family: "Gemunu Libre", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+p, label {
+  font-size: 0.9em;
   margin: 10px;
 }
 
@@ -167,6 +174,7 @@ main {
 }
 #aPropos .commentaire h3 {
   color: #822568;
+  font-size: 1em;
   font-style: italic;
   margin-top: 0;
   margin-bottom: 0;
@@ -190,15 +198,15 @@ main {
 /* Section competences */
 #competences {
   background-color: #301550;
+  /* Gérer les cartes de l'espace capacités */
+  /* Gérer l'espace des compétences techniques */
+  /* Gérer l'espace des outils techniques */
 }
-#competences .capacites, #competences .techniques {
+#competences .capacites, #competences .techniques, #competences .outils, #competences .environnements {
   display: flex;
   flex-direction: column;
   padding: 10px;
   overflow: hidden;
-}
-#competences .capacites h2, #competences .techniques h2 {
-  font-size: 1.3em;
 }
 #competences .carte {
   display: flex;
@@ -212,9 +220,6 @@ main {
 #competences .carte .-image .fa-mobile-screen-button {
   padding-left: 8px;
 }
-#competences .carte .-bloc h3 {
-  font-size: 0.9em;
-}
 #competences .techniques .-jauge {
   display: flex;
   align-self: center;
@@ -224,6 +229,8 @@ main {
 #competences .techniques label {
   padding: 5px;
   margin: auto;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 /* Section formations */

@@ -12,6 +12,7 @@ main
     width: 100%;
     color: #fff;
 }
+
 /* Section hero */
 #hero
 {
@@ -69,6 +70,7 @@ main
         font-size: 1.5em;
     }
 }
+
 /* Section aPropos */
 #aPropos
 {
@@ -78,6 +80,7 @@ main
         & h3
         {
             color: $secondaire;
+            font-size: 1em;
             font-style: italic;
             margin-top: 0;
             margin-bottom: 0;
@@ -102,20 +105,19 @@ main
     }
 
 } 
+
 /* Section competences */
 #competences
 {
-   & .capacites, .techniques
+    background-color: $primaire ; 
+   & .capacites, .techniques, .outils, .environnements
    {
     display: flex;
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
-    & h2
-    {
-        font-size: 1.3em;
-    }
    } 
+     /* Gérer les cartes de l'espace capacités */
    & .carte
    {
        display: flex;
@@ -132,14 +134,8 @@ main
             padding-left: 8px;
         }
        }
-       & .-bloc
-       {
-        & h3
-        {
-            font-size: 0.9em;
-        }
-       }
    }
+   /* Gérer l'espace des compétences techniques */
    & .techniques
    {
     & .-jauge
@@ -153,11 +149,17 @@ main
     {
         padding: 5px;
         margin: auto;
+        font-size: 0.8em;
+        font-weight: bold;
     }
    }
+   /* Gérer l'espace des outils techniques */
+ 
 
-    background-color: $primaire ; 
+
+   
 }
+
 /* Section formations */
 #formations
 {
@@ -165,6 +167,7 @@ main
 
     background-color: $secondaire ; 
 }
+
 /* Section parcours */
 #parcours
 {
@@ -172,6 +175,7 @@ main
 
     background-color: $tertiaire ; 
 }
+
 /* Section realisations */
 #realisations
 {
@@ -179,6 +183,7 @@ main
 
     background-color: $primaire ; 
 }
+
 /* Section passions */
 #passions
 {
